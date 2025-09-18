@@ -1,0 +1,20 @@
+{
+  "name": "dw",
+  "version": "1.0.0",
+  "description": "File downloader from web",
+  "homepage": "https://github.com/mintxdp/dw#readme",
+  "bugs": {
+    "url": "https://github.com/mintxdp/dw/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mintxdp/dw.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
