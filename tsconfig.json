@@ -1,44 +1,26 @@
 {
-  // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
-    // File Layout
-    // "rootDir": "./src",
-    // "outDir": "./dist",
+    /* Basic Options */
+    "target": "ES2022",                       /* Modern JS output */
+    "lib": ["ES2022"],                        /* Available libs */
+    "moduleResolution": "node",               /* Node-style resolution */
+    "outDir": "./dist",                       /* Output folder */
+    "rootDir": "./src",                       /* Input folder */
+    "resolveJsonModule": true,                /* Allow importing JSON */
+    "esModuleInterop": true,                  /* Enable default import compatibility */
+    "allowSyntheticDefaultImports": true,     /* Helps with CJS/ESM interop */
+    "skipLibCheck": true,                     /* Faster build */
+    "forceConsistentCasingInFileNames": true, /* Enforce import path casing */
 
-    // Environment Settings
-    // See also https://aka.ms/tsconfig/module
-    "module": "nodenext",
-    "target": "esnext",
-    "types": [],
-    // For nodejs:
-    // "lib": ["esnext"],
-    // "types": ["node"],
-    // and npm install -D @types/node
-
-    // Other Outputs
-    "sourceMap": true,
-    "declaration": true,
-    "declarationMap": true,
-
-    // Stricter Typechecking Options
-    "noUncheckedIndexedAccess": true,
-    "exactOptionalPropertyTypes": true,
-
-    // Style Options
-    // "noImplicitReturns": true,
-    // "noImplicitOverride": true,
-    // "noUnusedLocals": true,
-    // "noUnusedParameters": true,
-    // "noFallthroughCasesInSwitch": true,
-    // "noPropertyAccessFromIndexSignature": true,
-
-    // Recommended Options
-    "strict": true,
-    "jsx": "react-jsx",
-    "verbatimModuleSyntax": true,
-    "isolatedModules": true,
-    "noUncheckedSideEffectImports": true,
-    "moduleDetection": "force",
-    "skipLibCheck": true,
-  }
+    /* Type Checking */
+    "strict": true,                           /* Enable strict mode */
+    "noImplicitAny": true,                    /* Disallow implicit any */
+    "strictNullChecks": true,                 /* Better null handling */
+    "noUnusedLocals": true,                   /* Clean code */
+    "noUnusedParameters": true,               /* Catch unused args */
+    "noImplicitReturns": true,                /* Ensure function returns */
+    "noFallthroughCasesInSwitch": true        /* Catch switch fallthroughs */
+  },
+  "include": ["src"],   /* Only compile source files */
+  "exclude": ["node_modules", "dist"] /* Don’t compile dependencies */
 }

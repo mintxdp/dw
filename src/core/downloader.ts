@@ -6,7 +6,6 @@ const curl = new Curl();
 let Download_URL: string ="";
 let downloaded_file_path: string ="/downloads/";
 const writeStream = fs.createWriteStream(downloaded_file_path);
-let downloadData : string;
 
 curl.setOpt(Curl.option.URL,Download_URL);
 curl.setOpt(Curl.option.FOLLOWLOCATION,true);
